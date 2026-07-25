@@ -1,0 +1,110 @@
+CODE
+# Probability of having disease
+P_D = 0.01
+
+# Probability of positive test if disease exists
+P_Pos_D = 0.99
+
+# Probability of positive test if disease does not exist
+P_Pos_NotD = 0.05
+
+# Probability of not having disease
+P_NotD = 1 - P_D
+
+# Bayes Rule
+P_D_Pos = (P_Pos_D * P_D) / ((P_Pos_D * P_D) + (P_Pos_NotD * P_NotD))
+
+print("Probability that person actually has disease:")
+print(round(P_D_Pos * 100, 2), "%")
+print(“Rabiya")
+
+
+Q.1 In a college:
+20% of students know Python.
+80% of students know Java.
+90% of Python students get placed.
+40% of Java students get placed.
+A randomly selected student is placed.
+Find:
+Probability that the student knows Python.
+Probability that the student knows Java.
+Probability that a placed student knows Python
+
+CODE
+# Probability of knowing Python
+P_Python = 0.20
+
+# Probability of knowing Java
+P_Java = 0.80
+
+# Probability of placement if student knows Python
+P_Placed_Python = 0.90
+
+# Probability of placement if student knows Java
+P_Placed_Java = 0.40
+
+# Total probability of placement
+P_Placed = (P_Placed_Python * P_Python) + (P_Placed_Java * P_Java)
+
+# Bayes Rule for Python
+P_Python_Placed = (P_Placed_Python * P_Python) / P_Placed
+
+# Bayes Rule for Java
+P_Java_Placed = (P_Placed_Java * P_Java) / P_Placed
+
+print("Probability that placed student knows Python:")
+print(round(P_Python_Placed * 100, 2), "%")
+
+print("Probability that placed student knows Java:")
+print(round(P_Java_Placed * 100, 2), "%")
+print(“Rabiya T034”)
+
+
+Q.2 In a city:
+85% of taxis are Green.
+15% are Blue.
+A witness correctly identifies the taxi color 80% of the time.
+A witness claims the taxi involved in an accident was Blue. What is the probability that the taxi was actually Blue?
+CODE
+# Probability of Blue taxi
+P_Blue = 0.15
+
+# Probability of Green taxi
+P_Green = 0.85
+
+# Probability witness says Blue when taxi is Blue
+P_SaysBlue_Blue = 0.80
+
+# Probability witness says Blue when taxi is Green
+P_SaysBlue_Green = 0.20
+
+# Total probability that witness says Blue
+P_SaysBlue = (P_SaysBlue_Blue * P_Blue) + (P_SaysBlue_Green * P_Green)
+
+# Bayes Rule
+P_Blue_SaysBlue = (P_SaysBlue_Blue * P_Blue) / P_SaysBlue
+
+print("Probability that the taxi was actually Blue:")
+print(round(P_Blue_SaysBlue * 100, 2), "%")
+print(“Rabiya T034”)
+
+
+extra questions 
+# Probability of having COVID
+P_Covid = 0.05
+# Probability of positive test if person has COVID
+P_Pos_Covid = 0.95
+# Probability of positive test if person does not have COVID
+P_Pos_NotCovid = 0.10
+# Probability of not having COVID
+P_NotCovid = 1 - P_Covid
+# Bayes Rule
+P_Covid_Pos = (P_Pos_Covid * P_Covid) / ((P_Pos_Covid * P_Covid) + (P_Pos_NotCovid * P_NotCovid)
+print("Probability that person actually has COVID:")
+print(round(P_Covid_Pos * 100, 2), "%")
+print("Rabiya T034")
+
+
+
+
+
